@@ -1,4 +1,4 @@
-# BagOfWords_SentimentAnalysis_Template
+# Sentiment Analysis Template for PredictionIO
 
 # OverView
 
@@ -51,10 +51,6 @@ client.create_event(
 
 ## Install and Run PredictionIO
 Install PredictinIO from [Apache PredictionIO](http://predictionio.incubator.apache.org/install/).
-Let's say you have installed PredictionIO at /home/yourname/PredictionIO/. For convenience, add PredictionIO's binary command path to your PATH, i.e. /home/yourname/PredictionIO/bin
-```
-$ PATH=$PATH:/home/yourname/PredictionIO/bin; export PATH
-```
 Once you have completed the installation process, please make sure all the components (PredictionIO Event Server, Elasticsearch, and HBase) are up and running.
 
 ```
@@ -69,7 +65,7 @@ $ pio status
 To get template clone the below repository by executing the following command in the directory where you want the code to reside:
 
 ```
-git clone https://github.com/peoplehum/BagOfWords_SentimentAnalysis_Template
+git clone https://github.com/amrgit/SentimentAnalysis.git
 ```
 
 ## Generate an App ID and Access Key
@@ -121,7 +117,7 @@ Replace the value of access_key parameter by your applications's Access Key and 
 
 ```python
 $ pip install predictionio
-$ cd BagOfWords_SentimentAnalysis_Template
+$ cd SentimentAnalysis
 $ python data/import_eventserver.py --access_key 3mZWDzci2D5YsqAnqNnXH9SB6Rg3dsTBs8iHkK6X2i54IQsIZI1eEeQQyMfs7b3F --file data/train.csv
 ```
 You should see the following output:
